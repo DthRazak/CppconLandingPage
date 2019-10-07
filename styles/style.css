@@ -1,0 +1,59 @@
+.intro-2 {
+    background: url(../img/baner.png) no-repeat center center;
+    background-size: contain;
+}
+
+.navbar {
+    background-color: transparent;
+    min-height: 70px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 18px;
+  padding: 9px 10px !important;
+}
+
+.nav-item.nav-link {
+    color: #001e23;
+}
+
+.top-nav-collapse {
+    background-color: #ffa734;
+}
+
+.img-overlay {
+    margin-bottom: 5%;
+}
+
+.btn-reg-intro {
+    border-style: inset;
+    border-width: 5px;
+    color: #001e23;
+    width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #ffa734;
+    }
+
+    .nav-item.nav-link {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+         padding-top: 21.5px;
+         padding-bottom: 21.5px;
+    }
+}
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
