@@ -1,6 +1,21 @@
 .intro-2 {
-    background: url(../img/baner.png) no-repeat center center;
+    /* background: url(../img/baner.png) no-repeat center center; */
     background-size: contain;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .navbar {
@@ -21,7 +36,8 @@
 }
 
 .nav-item.nav-link {
-    color: #001e23;
+    /* color: #001e23; */
+    color: white;
 }
 
 .top-nav-collapse {
@@ -34,10 +50,50 @@
 
 .btn-reg-intro {
     border-style: inset;
-    border-width: 5px;
-    color: #001e23;
+    /* border-width: 5px; */
+    /* color: #001e23; */
+    color: white;
     width: 40%;
 }
+
+#s-updates {
+    background-color: #001e23;
+    height: 50%;
+    max-height: 300px;
+    /* padding: 135px; */
+    padding: 7.5%;
+}
+
+#s-updates .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+#s-updates .single h2 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+#s-updates .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+#s-updates .single .form-control:focus {
+    box-shadow: none;
+    border-color: #ffa734;
+}
+#s-updates .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #ffa734;
+    color: #001e23;
+}
+
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -49,6 +105,32 @@
          padding-top: 21.5px;
          padding-bottom: 21.5px;
     }
+
+    #s-updates {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        min-height: 80px;
+    }
+
+    #s-updates .single h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #s-updates .single .form-control {
+        height: 40px;
+    }
+
+    #s-updates .single .btn {
+        min-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #s-updates {
+        max-height: 200px;
+    }
+
 }
 
 html,
