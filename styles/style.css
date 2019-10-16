@@ -3,19 +3,28 @@
     background-size: contain;
 }
 
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+.video-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .navbar {
@@ -94,6 +103,9 @@ header video {
     color: #001e23;
 }
 
+footer {
+    background-color: #001e23;
+}
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -109,7 +121,7 @@ header video {
     #s-updates {
         padding-top: 15%;
         padding-bottom: 15%;
-        min-height: 80px;
+        min-height: 225px;
     }
 
     #s-updates .single h2 {
