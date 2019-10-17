@@ -8,6 +8,8 @@
 
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="styles/style.css">
 
   <title>CppCon</title>
@@ -91,20 +93,68 @@
     <!--Main Layout-->
 
     <!--Footer Layout-->
-    <footer class="py-5">
+    <footer class="pt-5 pb-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="accordion w-100">
+                        <div class="accordion d-lg-flex w-100" id="f-accordion">
                             <div class="col-lg-4 col-md-12">
-                                <a href="#"></a>
+                                <a href="#one" data-toggle="collapse" class="h4 text-white navlink p-0 d-block d-lg-none d-xl-none">
+                                    Heading
+                                </a>
+                                <div class="text-white h4 d-none d-lg-block d-xl-block">
+                                    Heading
+                                </div>
+                                <div class="collapse text-justify text-white d-lg-flex" id="one" data-parent="#f-accordion">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quae praesentium deserunt, quos unde asperiores ratione totam minus qui dolore quis repellat dolorum modi iste ullam obcaecati eaque! Incidunt, corrupti!
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <a href="#two" data-toggle="collapse"  class="h4 text-white navlink p-0 d-block d-lg-none d-xl-none">
+                                    Links
+                                </a>
+                                <div class="text-white h4 d-none d-lg-block d-xl-block">
+                                    Links
+                                </div>
+                                <div class="collapse d-lg-flex" id="two" data-parent="#f-accordion">
+                                    <ul class="list-unstyled w-100">
+                                        <li><a href="#" class="text-white">About Us</a></li>
+                                        <li><a href="#" class="text-white">Blog</a></li>
+                                        <li><a href="#" class="text-white">Private policy</a></li>
+                                        <li><a href="#" class="text-white">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <a href="#three" data-toggle="collapse"  class="h4 text-white navlink p-0 d-block d-lg-none d-xl-none">
+                                    Connect
+                                </a>
+                                <div class="text-white h4 d-none d-lg-block d-xl-block">
+                                    Connect
+                                </div>
+                                <div class="collapse text-white d-lg-flex" id="three" data-parent="#f-accordion">
+                                    <ul class="list-unstyled d-flex w-100 justify-content-between">
+                                        <li><a href="#" class="navlink p-0"><i class="fa fa-facebook fa-2x fa-footer"></i></a></li>
+                                        <li><a href="#" class="navlink p-0"><i class="fa fa-twitter fa-2x fa-footer"></i></a></li>
+                                        <li><a href="#" class="navlink p-0"><i class="fa fa-instagram fa-2x fa-footer"></i></a></li>
+                                        <li><a href="#" class="navlink p-0"><i class="fa fa-youtube-play fa-2x fa-footer"></i></a></li>
+                                        <li><a href="#" class="navlink p-0"><i class="fa fa-linkedin fa-2x fa-footer"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--Copyright -->
+        <div class="footer-copyright text-center text-white mt-4 pt-2 border-top border-dark">© 2019 CppCon:
+            <a href="https://cppcon.org" class="text-white">cppcon.org</a>
+        </div>
+        <!--Copyright-->
+
     </footer>
     <!--Footer Layout-->
 
