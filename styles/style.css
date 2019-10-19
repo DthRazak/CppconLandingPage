@@ -310,12 +310,6 @@ footer {
     font-size: 14px;
 }
 
-@media (max-width: 991.98px) {
-    .sch-block .nav-pills .nav-link {
-        color: rgba(255, 255, 255, 0.7);
-    }
-}
-
 .sch-block .nav-pills .nav-link:hover {
     background: #e68200;
     color: #fff;
@@ -334,19 +328,6 @@ footer {
 
 .sch-block .nav-pills .nav-link.active:after {
     opacity: 1;
-}
-
-@media (max-width: 767.98px) {
-    .sch-block .nav-pills .nav-link.active:after {
-        opacity: 0;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .sch-block .nav-pills .nav-link {
-        display: block;
-        margin-bottom: 5px;
-    }
 }
 
 .sch-block .tab-content {
@@ -494,11 +475,20 @@ footer {
     .btn-view-all {
         width: 45%;
     }
+
+    .speaker-wrap .speaker-img{
+        margin-right: 20px;
+        margin-left: -20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     #s-updates {
         max-height: 200px;
+    }
+
+    .sch-block .nav-pills .nav-link {
+        padding: 35px 10px !important;
     }
 
 }
